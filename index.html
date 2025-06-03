@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Application</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter City Name..." spellcheck="false">
-            <button>
-                <img src="images/search.png" alt="search" >
-            </button>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" alt="rain" class="weather-icon">
-            <h1 class="temp">29°C</h1>
-            <h2 class="city">Mumbai</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" alt="humidity">
-                    <div><p class="humidity">
-                        50%
-                    </p>
-                <p>Humidity</p>
-            </div>
-                </div>
-                <div class="col">
-                    <img src="images/wind.png" alt="wind">
-                    <div><p class="wind">
-                        15 km/hr
-                    </p>
-                <p>Wind Speed</p>
-            </div>
-                </div>
-            </div>
-        </div>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="Enter City Name..." spellcheck="false" />
+      <button>
+        <img src="images/search.png" alt="search" />
+      </button>
     </div>
 
-    <script src="app.js"></script>
+    <div class="weather">
+      <img src="" alt="weather icon" class="weather-icon" />
+      <h1 class="temp">29°C</h1>
+      <h2 class="city">Mumbai</h2>
+      
+      <!-- ✅ Weather Condition + Local Time -->
+      <p class="condition">--</p>
+      <p class="local-date">--</p>
+      <p class="local-time">--:--</p>
+
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png" alt="humidity" />
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/wind.png" alt="wind" />
+          <div>
+            <p class="wind">15 km/hr</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/clouds.png" alt="clouds" />
+          <div>
+            <p class="clouds">--%</p>
+            <p>Cloudiness</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/atmospheric.png" alt="pressure" />
+          <div>
+            <p class="pressure">-- hPa</p>
+            <p>Pressure</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/sunrise.png" alt="sunrise" />
+          <div>
+            <p class="sunrise">--:--</p>
+            <p>Sunrise</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/sunsets.png" alt="sunset" />
+          <div>
+            <p class="sunset">--:--</p>
+            <p>Sunset</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
