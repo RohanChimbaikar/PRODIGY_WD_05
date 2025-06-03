@@ -6,8 +6,7 @@
     }
     
     body {
-       background: linear-gradient(45deg, hsla(284, 100%, 53%, 1) 0%, #f8a902 100%);
-
+       background: linear-gradient(90deg, hsla(230, 33%, 47%, 1) 0%, hsla(350, 73%, 47%, 1) 100%);
         min-height: 100vh;
         display: flex;
         align-items: center;
