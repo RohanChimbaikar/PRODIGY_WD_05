@@ -4,16 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather Application</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="card collapsed">
     <div class="search">
       <input type="text" placeholder="Enter City Name..." spellcheck="false" />
       <button>
-        <img src="images/search.png" alt="search" style="width: 16px; height: 20px; margin-right: 2px;" />
+        <img src="images/search.png" alt="search" />
       </button>
-        <button id="location-btn" class="locate" title="Use My Location"><img src="images/location.svg" style="width: 30px; height: 30px; margin-right: 2px; font-weight: 1;"></button>
+      <button id="location-btn" class="locate" title="Use My Location">
+        <img src="images/location.svg" alt="location" />
+      </button>
     </div>
 
     <div class="loading">Searching...</div>
@@ -23,14 +25,13 @@
       <img src="" alt="weather icon" class="weather-icon" />
       <h1 class="temp">--°C</h1>
       <h2 class="city">--</h2>
-      
       <p class="condition">--</p>
       <p class="local-date">--</p>
       <p class="local-time">--:--</p>
 
       <div class="details">
         <div class="col">
-          <img src="images/droplets-svgrepo-com.svg" alt="humidity" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/droplets-svgrepo-com.svg" alt="humidity" />
           <div>
             <p class="humidity">--%</p>
             <p>Humidity</p>
@@ -38,7 +39,7 @@
         </div>
 
         <div class="col">
-          <img src="images/wind-svgrepo-com.svg" alt="wind" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/wind-svgrepo-com.svg" alt="wind" />
           <div>
             <p class="wind">-- km/hr</p>
             <p>Wind Speed</p>
@@ -46,7 +47,7 @@
         </div>
 
         <div class="col">
-          <img src="images/clouds-svgrepo-com.svg" alt="clouds" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/clouds-svgrepo-com.svg" alt="clouds" />
           <div>
             <p class="clouds">--%</p>
             <p>Cloudiness</p>
@@ -54,7 +55,7 @@
         </div>
 
         <div class="col">
-          <img src="images/barometer-svgrepo-com.svg" alt="pressure" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/barometer-svgrepo-com.svg" alt="pressure" />
           <div>
             <p class="pressure">-- hPa</p>
             <p>Pressure</p>
@@ -62,7 +63,7 @@
         </div>
 
         <div class="col">
-          <img src="images/sunrise-svgrepo-com.svg" alt="sunrise" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/sunrise-svgrepo-com.svg" alt="sunrise" />
           <div>
             <p class="sunrise">--:--</p>
             <p>Sunrise</p>
@@ -70,14 +71,15 @@
         </div>
 
         <div class="col">
-          <img src="images/moon-svgrepo-com.svg" alt="sunset" style="width: 30px; height: 30px; margin-right: 12px;" />
+          <img src="images/moon-svgrepo-com.svg" alt="sunset" />
           <div>
             <p class="sunset">--:--</p>
             <p>Sunset</p>
           </div>
         </div>
-        </div>
-        </div></div>
- <script src="app.js"></script>
- </body>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
 </html>
