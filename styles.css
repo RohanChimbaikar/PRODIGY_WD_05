@@ -16,7 +16,7 @@ body {
 
 .card {
   width: 90%;
-  max-width: 400px; /* slightly narrower */
+  max-width: 400px;
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(30px);
   color: #fff;
@@ -36,65 +36,62 @@ body {
 
 /* Expanded state */
 .card.expanded {
-  max-height: 650px; /* reduced height to avoid scrollbar */
+  max-height: 650px;
   padding: 30px 25px;
 }
 
+
+
 .search {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px; /* Space between input and buttons */
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .search input {
-  border: 0;
-  outline: 0;
+  flex: 1;
+  min-width: 0;
   background: #ebfffc;
   color: #555;
-  padding: 8px 20px;
-  height: 44px; /* smaller height */
+  padding: 8px 16px;
+  height: 44px;
+  border: none;
   border-radius: 30px;
-  flex: 1;
-  margin-right: 12px;
-  font-size: 16px; /* smaller font */
+  font-size: 16px;
 }
 
-.search button {
-  border: 0;
-  outline: 0;
-  background: #ebfffc;
-  border-radius: 50%;
-  width: 50px; /* smaller button */
+.search button,
+#location-btn {
+  flex-shrink: 0;
+  width: 44px;
   height: 44px;
+  background: #ebfffc;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
 }
 
-.search button:hover {
-  background: #d0f7f3;
+.search button img{
+  width: 14px;
+  height: 16px;
+}
+#location-btn img {
+  width: 24px;
+  height: 24px;
 }
 
-.search button img {
-  width: 15px; /* smaller icon */
-  height: 18px;
-}
-
-#location-btn > img {
-  width: 40px;  /* increase width */
-  height: 26px; /* increase height */
-}
 
 .locate {
   margin-left: 8px;
 }
 
-/* Weather content - hidden initially */
 .weather-content {
   opacity: 0;
   transform: translateY(15px);
@@ -109,7 +106,7 @@ body {
 }
 
 .weather-icon {
-  width: 90px; /* smaller icon */
+  width: 90px;
   margin: 15px 0;
   opacity: 0;
   transform: scale(0.8);
@@ -122,13 +119,13 @@ body {
 }
 
 .temp {
-  font-size: 48px; /* smaller font */
+  font-size: 48px;
   font-weight: 500;
   margin: 8px 0;
 }
 
 .city {
-  font-size: 24px; /* smaller */
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 8px;
 }
@@ -163,7 +160,7 @@ body {
 }
 
 .col img {
-  width: 24px; /* smaller icons */
+  width: 24px;
   height: 24px;
   margin-right: 10px;
   filter: brightness(0) invert(1);
@@ -192,4 +189,27 @@ body {
   margin: 8px 0;
   font-size: 13px;
   display: none;
+}
+
+@media (max-width: 480px) {
+  .search input {
+    font-size: 14px;
+    padding: 6px 12px;
+    height: 40px;
+  }
+
+  .search button,
+  #location-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search button img {
+    width: 13px;
+    height: 14px;
+  }
+  #location-btn img {
+    width: 24px;
+    height: 34px;
+  }
 }
